@@ -1,0 +1,23 @@
+type PostCommentReply {
+  id: ID!
+  postId: ID!
+  userId: ID!
+  commentText: String!
+  parentId: ID!
+}
+
+type FetchPostCommentReplies {
+  id: ID!
+  user: User!
+  postId: ID!
+  commentText: String!
+  parent: PostComment
+}
+
+extend type Query {
+  getPostCommentReplies(parentId: ID!): [FetchPostCommentReplies!]!
+}
+extend type Mutation {
+  createPostCommentReply(postID: ID!, userID: ID!, commentText: String!, parentId: ID!): PostCommentReply!
+  deletePostCommentReply(id: ID!): PostCommentReply!
+}

@@ -1,0 +1,17 @@
+type Friendship {
+  userID: ID!
+  friendID: ID!
+  status: String!
+}
+
+extend type Query {
+  getAllFriends(userID: ID!): [User!]!
+  getAllFriendRequests(userID: ID!): [User!]!
+  getAllFriendSuggestions(userID: ID!): [User!]!
+}
+
+extend type Mutation {
+  createFriendship(userID: ID!, friendID: ID!): Friendship!
+  deleteFriendship(userID: ID!, friendID: ID!): Friendship!
+  confirmFriendship(userID: ID!, friendID: ID!): Friendship!
+}

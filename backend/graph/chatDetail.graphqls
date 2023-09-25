@@ -1,0 +1,28 @@
+type ChatDetail {
+  id: ID!
+  headerID: ID!
+  createdAt: String!
+  senderID: ID!
+  receiverID: ID!
+  text: String!
+  mediaURL: String!
+}
+
+type FetchChatDetail {
+  id: ID!
+  headerID: ID!
+  createdAt: String!
+  sender: User!
+  receiver: User!
+  text: String!
+  mediaURL: String!
+}
+
+extend type Query {
+  getAllChat(headerID: ID!): [FetchChatDetail!]!
+}
+
+extend type Mutation {
+  createChatDetail(senderID: ID!, receiverID: ID!, text: String!, headerID: ID!, mediaURL: String!): ChatDetail
+  deleteChatDetail(id: ID!): ChatDetail
+}

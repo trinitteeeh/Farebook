@@ -1,0 +1,67 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.header {
+  color: #487cf4;
+}
+
+.card {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  padding: 2vw;
+  width: 30vw;
+}
+
+.title {
+  color: black;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vh;
+}
+
+.textInput {
+  border: 1px solid #dddfe2;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.loginBtn {
+  background-color: #487cf4;
+  font-weight: 700;
+  width: 100%;
+}
+
+.text {
+  color: black;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.redirectLink {
+  color: #487cf4;
+}
+
+.createAccBtn {
+  background-color: #48b42c;
+  font-weight: 700;
+}
+
+.errLabel {
+  color: red;
+  font-weight: 500;
+}

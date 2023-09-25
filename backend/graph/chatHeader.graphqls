@@ -1,0 +1,27 @@
+type ChatHeader {
+  id: ID!
+  createdAt: String!
+  userID1: ID!
+  userID2: ID!
+}
+
+type FetchChatHeader {
+  id: ID!
+  createdAt: String!
+  user1: User!
+  user2: User!
+}
+
+input newChatHeader {
+  userId1: ID!
+  userId2: ID!
+}
+
+extend type Query {
+  getAllChatHeaders(userID: ID): [FetchChatHeader!]!
+}
+
+extend type Mutation {
+  createChatHeader(newChatHeader: newChatHeader!): ChatHeader
+  # deleteChatHeader(userID1: ID!, userID2: ID!): ChatHeader
+}

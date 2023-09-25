@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "emailjs": "^4.0.2",
+    "jsonwebtoken": "^9.0.1",
+    "react-router-dom": "^6.14.2",
+    "react-video-thumbnail": "^0.1.3"
+  }
+}

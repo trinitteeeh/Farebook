@@ -1,0 +1,8 @@
+type GroupPost {
+  groupId: ID!
+  postId: ID!
+}
+
+extend type Mutation {
+  createGroupPost(groupID: ID!, inputPost: NewPost!): GroupPost!
+}

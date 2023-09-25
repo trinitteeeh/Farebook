@@ -1,0 +1,73 @@
+.container {
+  width: 100%;
+  padding: 1vh 2vw;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  height: 16vh;
+}
+
+.leftSide {
+  flex: 1;
+  height: fit-content;
+  margin-left: 15vw;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.profileImage {
+  width: 23vh;
+  height: 23vh;
+  /* background-color: pink; */
+  position: absolute;
+  z-index: 3;
+  top: -10vh;
+  left: 2vw;
+  border: 2px #ffffff solid;
+  border-radius: 50%;
+}
+
+.profileImage img,
+.friendImage img {
+  border-radius: 50%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.friendImageContainer {
+  display: flex;
+  position: relative;
+  height: 10px;
+  width: 100px;
+  padding-left: 1rem;
+  margin-top: 1vh;
+}
+
+.friendImage {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  z-index: 1;
+  margin-left: -1rem;
+}
+
+.friendImage:first-child {
+  margin-left: 0;
+}
+
+.friendImage:not(:last-child) {
+  margin-right: -1rem;
+}
+.rightSide {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1vw;
+}

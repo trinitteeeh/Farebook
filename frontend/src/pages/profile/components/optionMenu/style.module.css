@@ -1,0 +1,40 @@
+.container {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 1vh 1vw;
+}
+
+.container:hover {
+  background-color: #f2f2f2;
+}
+
+h4 {
+  color: #64676b;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0;
+  cursor: pointer;
+}
+
+.optionMenuContainer {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  height: 8vh;
+  padding: 0 2vw;
+}
+
+.active {
+  color: #477ef3;
+  border-bottom: 3px solid #477ef3;
+}
+
+.wrapper {
+  width: fit-content;
+  height: 100%;
+}

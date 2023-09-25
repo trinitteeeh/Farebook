@@ -1,0 +1,23 @@
+.container {
+  background-color: #f0f2f5;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  align-items: center;
+  position: relative;
+}
+
+.content {
+  width: 77vw;
+  position: absolute;
+  top: 8vh;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow-y: scroll;
+}

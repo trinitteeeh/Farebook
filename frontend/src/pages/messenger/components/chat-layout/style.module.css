@@ -1,0 +1,172 @@
+.container {
+  height: 92vh;
+  width: 75vw;
+  right: 0;
+  position: absolute;
+  top: 8vh;
+  background-color: #ffffff;
+  overflow-y: scroll;
+  box-sizing: border-box;
+}
+
+.profileContainer {
+  width: 100%;
+  height: 10vh;
+  position: absolute;
+  top: 0;
+  border-bottom: 1px solid #e4e6ea;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 1vw;
+  gap: 1%;
+  box-shadow: 0 0px 5px rgba(92, 91, 91, 0.3);
+}
+
+.profilePicture {
+  width: 4rem;
+  height: 4rem;
+}
+
+.profilePicture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.chatContainer {
+  height: 74vh;
+  width: 100%;
+  top: 10vh;
+  position: absolute;
+  overflow-y: scroll;
+  background-color: #ffffff;
+  padding: 1vh 1vw;
+}
+
+.containerSmall {
+  height: 66vh;
+}
+
+.actionContainer {
+  width: 100%;
+  min-height: 8vh;
+  max-height: 16vh;
+  height: fit-content;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid #e4e6ea;
+  padding: 1vh 1vw;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.actionBottom {
+  display: flex;
+}
+
+.selectedImage {
+  height: 7vh;
+  width: 7vh;
+  display: flex; /* Add this to vertically center the image within the container */
+  margin-bottom: 1vh;
+  position: relative;
+}
+
+.selectedImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.closeImageIcom {
+  position: absolute;
+  right: -0.5rem;
+  top: -0.5rem;
+  background-color: #f0f2f6;
+  border-radius: 50%;
+  border: 1px solid #e4e6ea;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.formContainer {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: 2vw;
+  position: relative;
+}
+
+.postTextArea {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  resize: vertical;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  display: block;
+  background-color: #f0f2f6;
+  border-radius: 10px;
+  width: 100%;
+  height: auto; /* Automatically adjust height based on content */
+  max-height: 200px; /* Set a maximum height to limit expansion */
+  padding-right: 40px;
+  flex: 1;
+}
+
+.iconContainer {
+  width: fit-content;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0.4rem;
+}
+
+.icon:hover {
+  background-color: #f2f2f2;
+}
+
+.icon svg {
+  width: 100%;
+  height: 100%;
+  color: #4584ff;
+  cursor: pointer;
+}
+
+.inputHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.sendIcon {
+  position: absolute;
+  right: 5px;
+}

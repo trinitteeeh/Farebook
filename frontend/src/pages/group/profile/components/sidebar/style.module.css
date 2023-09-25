@@ -1,0 +1,83 @@
+.container {
+  background-color: #ffffff;
+  width: 25vw;
+  height: 92vh;
+  position: sticky;
+  top: 8vh;
+  left: 0;
+}
+
+.group {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1vh 1vw;
+  cursor: pointer;
+}
+
+.topPart {
+  display: flex;
+  margin-bottom: 1vh;
+  gap: 1rem;
+}
+
+.profile {
+  width: 4rem;
+  height: 4rem;
+}
+
+.profile img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.bottomPart {
+  display: flex;
+  gap: 1rem;
+}
+
+.status {
+  flex: 8;
+  background-color: #e6f4ff;
+  color: #4077f2;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0.5vh 0.5vw;
+  font-size: 0.9rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.statusPending {
+  background-color: #e4e6ea;
+  color: #6d6d6d;
+}
+
+.popup {
+  position: absolute;
+  width: 100%;
+  top: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e4e6ea;
+  display: none;
+  padding: 0.5vh 0.5vw;
+}
+
+.active {
+  display: block;
+}
+
+.moreIcon {
+  flex: 1;
+  background-color: #e4e6ea;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

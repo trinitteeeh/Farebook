@@ -1,0 +1,36 @@
+type Post {
+  id: ID!
+  postText: String!
+  userId: String!
+  privacy: String!
+  publishDate: String!
+}
+
+type FetchPost {
+  id: ID!
+  postText: String!
+  user: User!
+  privacy: String!
+  publishDate: String!
+  likesCount: Int!
+  mediaLink: [String!]!
+  isLiked: Boolean!
+}
+
+input NewPost {
+  userId: ID!
+  postText: String!
+  privacy: String!
+  publishDate: String!
+}
+
+extend type Query {
+  getAllPost(currentUserID: ID!, limit: Int!, offset: Int!): [FetchPost!]!
+  getPostByUserId(userId: ID!): [FetchPost!]!
+  getGroupPostByUserId(userId: ID!): [FetchPost!]!
+}
+
+extend type Mutation {
+  createPost(inputPost: NewPost): Post!
+  deletePost(id: ID!): Post!
+}

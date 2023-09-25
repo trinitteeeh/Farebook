@@ -1,0 +1,46 @@
+.container {
+  box-sizing: border-box;
+  display: flex;
+  background-color: #f0f2f5;
+  justify-content: flex-start;
+  align-items: center;
+  width: 19vw;
+  border-radius: 20px;
+  padding: 1vh 0.5vw;
+  gap: 1vw;
+  transition: background-color 0.1s ease;
+  cursor: pointer;
+}
+
+.container:hover {
+  background-color: #e3e6e8;
+}
+
+.imageContainer {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.logo {
+  width: 36px;
+  height: 36px;
+}
+
+h4 {
+  font-weight: 500;
+  margin: 0;
+}
+
+.friendLogo {
+  color: white;
+  /* Optionally, you can adjust the size of the icon */
+  font-size: 24px;
+}

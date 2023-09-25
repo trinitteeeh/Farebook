@@ -1,0 +1,15 @@
+.container {
+  margin-top: 10vh;
+  background-color: #f0f2f5;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.scrollbarContainer {
+  display: flex;
+  justify-content: center;
+}

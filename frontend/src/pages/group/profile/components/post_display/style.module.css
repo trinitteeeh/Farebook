@@ -1,0 +1,47 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 2vh 2vw;
+}
+
+.leftDisplay {
+  flex: 3;
+  min-height: 100vh;
+  overflow-y: scroll;
+  padding: 0;
+}
+
+.rightDisplay {
+  flex: 2;
+  padding: 1vh 1vw;
+}
+
+.infoContainer {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1vh 1vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.description {
+  height: 100%;
+  max-height: 40%;
+  overflow: hidden;
+  height: fit-content;
+}
+
+.description h4 {
+  font-weight: 400;
+  text-align: justify;
+}
+
+.info {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.2rem;
+}

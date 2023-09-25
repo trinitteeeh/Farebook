@@ -1,0 +1,117 @@
+.sidebarContainer {
+  position: absolute;
+  top: 8vh;
+  left: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  width: 23vw;
+  box-shadow: 0 0px 10px rgba(92, 91, 91, 0.3);
+  padding: 1vh 1vw;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+
+.sidebarHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e4e6ea;
+}
+
+.iconPlain {
+  width: 1rem;
+  height: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon svg,
+.iconPlain svg {
+  width: 100%;
+  height: 100%;
+  color: #000000;
+}
+
+.filterContainer {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.filterContainer:hover {
+  background-color: #f4f4f4;
+}
+
+/* Display Container */
+.displayContainer {
+  width: 100%;
+  height: 100%;
+  padding: 3vh 3vw;
+  box-sizing: border-box;
+}
+
+.gridDisplay {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  justify-items: center; /* Center items horizontally */
+}
+
+/* Card */
+.friendCardContainer {
+  width: 11rem;
+  height: 18rem;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 0px 10px rgba(92, 91, 91, 0.3);
+  /* height: fit-content; */
+  display: flex;
+  flex-direction: column;
+}
+
+.topPart {
+  width: 100%;
+  height: 50%;
+}
+
+.topPart img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0px;
+}
+
+.botomPart {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+  padding: 1vh 1vh;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.actionContainer {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}

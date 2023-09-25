@@ -1,0 +1,29 @@
+type Reel {
+  id: ID!
+  userID: ID!
+  text: String!
+  mediaURL: String!
+}
+
+type FetchReel {
+  id: ID!
+  user: User!
+  text: String!
+  mediaURL: String!
+}
+
+input NewReel {
+  userID: ID!
+  text: String!
+  mediaURL: String!
+}
+
+extend type Query {
+  getAllReels(limit: Int!, offset: Int!): [FetchReel!]!
+  getReelsURLByUserID(userID: ID!):[String]!
+}
+
+extend type Mutation {
+  createReel(inputReel: NewReel!): Reel!
+  deleteReel(reelID: ID!): Reel!
+}

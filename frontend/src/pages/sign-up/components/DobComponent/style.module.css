@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vh;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.selectContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.select {
+  padding: 1vh;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 30%;
+  font-size: 1rem;
+}
+
+.select:focus {
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}

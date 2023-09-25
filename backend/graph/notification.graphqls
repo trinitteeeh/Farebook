@@ -1,0 +1,23 @@
+type Notification {
+  id: ID!
+  userID: ID!
+  profileID: ID!
+  createdAt: String!
+  text: String!
+}
+
+type FetchNotification {
+  id: ID!
+  user: User!
+  profile: User!
+  createdAt: String!
+  text: String!
+}
+
+extend type Query {
+  getAllNotification(userID: ID!): [FetchNotification!]!
+}
+
+extend type Mutation {
+  createNotification(userID: ID!, profileID: ID!, createdAt: String!, text: String!): Notification!
+}

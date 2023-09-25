@@ -1,0 +1,38 @@
+type User {
+  id: ID!
+  firstName: String!
+  surename: String!
+  email: String!
+  dob: String!
+  gender: String!
+  profileURL: String!
+  isAuth: Boolean!
+}
+
+input NewUser {
+  firstName: String!
+  surename: String!
+  email: String!
+  dob: String!
+  gender: String!
+  password: String!
+  profileURL: String!
+  isAuth: Boolean!
+}
+
+extend type Query {
+  getUser(id: ID!): User!
+  getAllUser: [User!]!
+  getUserByToken(token: String!): User!
+  getUserByID(id: ID!): User!
+  getUserByEmail(email: String!): User!
+}
+
+extend type Mutation {
+  createUser(inputUser: NewUser!): User!
+  updateUser(id: ID!, inputUser: NewUser!): User!
+  deleteUser(id: ID!): User!
+  login(email: String!, password: String!): String!
+  activateAccount(id: ID!): Boolean!
+  resetPassword(id: ID!, newPassword: String!): Boolean!
+}

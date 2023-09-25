@@ -1,0 +1,19 @@
+type PostLike {
+  postId: ID!
+  userId: ID!
+}
+
+type FetchPostLike {
+  postId: ID!
+  user: User!
+}
+
+extend type Query {
+  getPostLike(postId: ID!): [User!]!
+  getLikesCount(postId: ID!): Int!
+}
+
+extend type Mutation {
+  createPostLike(postID: ID!, userID: String!): PostLike!
+  deletePostLike(postID: ID!, userID: String!): String!
+}

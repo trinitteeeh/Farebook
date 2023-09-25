@@ -1,0 +1,30 @@
+type Group {
+  id: ID!
+  name: String!
+  description: String!
+  createdAt: String!
+  profileURL: String!
+  privacy: String!
+}
+
+type FetchGroup {
+  id: ID!
+  name: String!
+  description: String!
+  createdAt: String!
+  members: [FetchGroupMember!]!
+  profileURL: String!
+  privacy: String!
+  posts: [FetchPost!]!
+}
+
+extend type Query {
+  getGroupsByUserID(userID: ID!): [FetchGroup!]!
+  getGroupByID(id: ID!, userID: ID!): FetchGroup!
+  getAllGroup(userID: ID!): [FetchGroup!]!
+  getGroupRecommendation(userID: ID!): [FetchGroup!]!
+}
+extend type Mutation {
+  createGroup(name: String!, description: String!, profileURL: String!, privacy: String!): Group!
+  deleteGroup(id: ID!): Group!
+}

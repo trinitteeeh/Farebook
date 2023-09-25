@@ -1,0 +1,14 @@
+type PostPicture {
+  postId: ID!
+  pictureURL: String!
+}
+
+extend type Query {
+  getPictureURL(postID: ID!): String
+  getPictureByUserID(userID: ID!): [String]!
+}
+
+extend type Mutation {
+  createPostPicture(postID: ID!, pictureURL: String!): PostPicture!
+  deletePostPicture(postID: ID!): PostPicture!
+}

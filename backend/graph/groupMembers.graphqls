@@ -1,0 +1,18 @@
+type GroupMember {
+  groupID: ID!
+  memberID: ID!
+  joinedAt: String!
+  status: String!
+  role: String!
+}
+
+type FetchGroupMember{
+  user: User!
+  role: String!
+  status: String!
+}
+
+extend type Mutation {
+  createGroupMember(groupID: ID!, memberID: ID!, status: String!, role: String!): GroupMember
+  deleteGroupMember(groupID: ID!, memberID: ID!): GroupMember
+}

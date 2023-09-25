@@ -1,0 +1,303 @@
+/* css for create post */
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 1vh 1vw;
+  border-radius: 10px;
+  background-color: white;
+  width: 100%;
+  box-sizing: border-box;
+  height: fit-content;
+}
+
+.topPart {
+  display: flex;
+  gap: 1vw;
+  border-bottom: 1px solid #f0f2f5;
+  padding-bottom: 2vh;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.imageContainer {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.popUpBtn {
+  background-color: #f0f2f5;
+  cursor: pointer;
+  flex: 1;
+  border-radius: 20px;
+  text-align: start;
+  padding: 1vh 1vw 1vh 1.3vw;
+  color: #a0a2a5;
+}
+
+.popUpBtn:hover {
+  background-color: #f0f0f0;
+}
+
+.bottomPart {
+  display: flex;
+  justify-content: space-between;
+  padding: 2vh 1vw;
+}
+
+.featureContainer {
+  display: flex;
+  cursor: pointer;
+  gap: 0.1vw;
+  align-items: center;
+  font-weight: 600;
+  transition: background-color 0.1s ease;
+  background-color: #ffffff;
+  width: 10vw;
+  border-radius: 15px;
+  padding: 0 1vw;
+}
+
+.featureContainer:hover {
+  background-color: #f0f2f5;
+  transition: background-color 0.1s ease-out;
+}
+
+.featureContainer svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* css for add post dialog */
+.dialogOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease-in-out;
+}
+
+.dialogOverlay.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.dialogContent {
+  background-color: white;
+  padding: 1vh;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  max-width: 33vw;
+  min-height: 50vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 1vh;
+}
+
+.dialogTitle {
+  height: 5vh;
+  width: 100%;
+  border-bottom: 1px #e4e6ea solid;
+  color: black;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.closeBtn {
+  width: 4vw;
+  height: 6vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.closeIcon {
+  min-width: 2.7rem;
+  min-height: 2.7rem;
+  cursor: pointer;
+}
+
+.profileContainer {
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profilePicture {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profileDetail {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.postContainer {
+  min-height: 23vh;
+  max-height: 30vh;
+  max-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  gap: 2vh;
+}
+
+.postTextArea {
+  padding: 10px;
+  font-size: 1.7rem;
+  border: none;
+  border-radius: 5px;
+  resize: vertical;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  max-height: 23vh;
+  min-height: 10vh;
+  display: block;
+}
+
+.mediaPreviewContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  border: 1px solid #ced0d4;
+  border-radius: 10px;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.closeImageIcon {
+  position: absolute;
+  top: -1rem;
+  right: 0rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: #ced0d4;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ffffff;
+}
+
+.mediaPreview {
+  min-width: 10rem;
+  min-height: 10rem;
+  max-width: fit-content;
+  max-height: fit-content;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.mediaPreview img,
+VideoThumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.postedPicture {
+  padding: 1vh;
+  border-radius: 10px;
+  border: 1px #e4e6ea solid;
+}
+
+.optionContainer {
+  border: 1px #e4e6ea solid;
+  border-radius: 10px;
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.optionIconContainer {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.optionTitle {
+  font-size: 1rem;
+}
+
+.optionIcon {
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  box-sizing: border-box;
+  padding: 0.5rem;
+}
+
+.optionIcon svg {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.optionIcon:hover {
+  background-color: #e4e6ea;
+}
+
+.actionContainer {
+  padding: 2vh 0;
+  box-sizing: border-box;
+}
+
+.submitBtn {
+  background-color: #4077f2;
+  width: 100%;
+  color: white;
+}
+
+.inputHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.mentionContainer {
+  background-color: blue;
+}

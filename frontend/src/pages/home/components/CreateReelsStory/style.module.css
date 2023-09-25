@@ -1,0 +1,130 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 1vh 1vw 3vh 1vw;
+  border-radius: 10px;
+  background-color: white;
+  width: 100%;
+  box-sizing: border-box;
+  height: fit-content;
+  min-height: 50vh;
+}
+
+.header {
+  display: flex;
+  border-bottom: 3px solid #f0f2f5;
+  margin-bottom: 3vh;
+}
+
+.menuItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  gap: 1vw;
+  cursor: pointer;
+}
+
+.menuItemActive {
+  border-bottom: 1px #3c74e3 solid;
+  color: #3c74e3;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 100%;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imageCard {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.cardImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 190%;
+  height: 190%;
+  color: #c0c2c7;
+}
+
+.addReelsBtn {
+  position: absolute;
+  background-color: #456af8;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  border: 0.5rem white solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.addIcon {
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.imageContainer h3 {
+  width: 100%;
+  margin: 0;
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 0.3rem;
+  box-sizing: border-box;
+  font-size: 1.1rem;
+  min-height: 1.5rem;
+}
+
+.descriptionContainer {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  gap: 3vh;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 2vw;
+  min-height: 100%;
+}
+
+.descriptionItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7vw;
+}
+
+.descriptionItemIcon {
+  width: 2rem;
+  height: 2rem;
+}
+
+h4 {
+  margin: 0;
+  font-size: 1rem;
+}

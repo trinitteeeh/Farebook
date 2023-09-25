@@ -1,0 +1,28 @@
+.container {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 8vh;
+  box-shadow: inset 0 -2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  width: 20vw;
+  padding: 2vh 0.5vw 0 0.5vw;
+}
+
+.header {
+  display: flex;
+  padding: 1vw 1vw 0 1vw;
+  color: #6b6d72;
+}
+
+h5 {
+  margin: 0;
+  flex: 1;
+  text-align: start;
+}
+
+.headerIconContainer {
+  display: flex;
+  justify-content: space-around;
+  min-width: 30%;
+}

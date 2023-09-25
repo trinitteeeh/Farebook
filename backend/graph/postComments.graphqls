@@ -1,0 +1,23 @@
+type PostComment {
+  id: ID!
+  postId: ID!
+  userId: ID!
+  commentText: String!
+}
+
+type FetchPostComments {
+  id: ID!
+  user: User!
+  postId: ID!
+  commentText: String!
+  parentId: ID!
+  replies: [FetchPostCommentReplies!]!
+}
+
+extend type Query {
+  getPostComments(postID: ID!): [FetchPostComments!]!
+}
+extend type Mutation {
+  createPostComment(postID: ID!, userID: ID!, commentText: String!): PostComment!
+  deletePostComment(id: ID!): PostComment!
+}
